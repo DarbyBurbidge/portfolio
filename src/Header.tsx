@@ -28,23 +28,23 @@ export const Header: React.FC = () => {
         <header className="header">
             <div>              
                 <div className="header-title-div">
-                    <Link className="header-title link" to="/">The Darby</Link>
+                    <Link className="header-title header-link neon-purple always-on" to="/">The Darby</Link>
                 </div>
             </div>
             <nav className="main-nav">
                 <ul className="nav-list">
                     
                     <li className="link-container">
-                        <NavLink className="home-link link" to="/">Home</NavLink>
+                        <NavLink className="home-link header-link neon-purple" to="/">Home</NavLink>
                     </li>
                     <li className="link-container">
-                        <NavLink className="about-link link" to="/about">About</NavLink>
+                        <NavLink className="projects-link header-link neon-purple" to="/projects">Projects</NavLink>
                     </li>
                     <li className="link-container">
-                        <NavLink className="projects-link link" to="/projects">Projects</NavLink>
+                        <NavLink className="about-link header-link neon-purple" to="/about">About</NavLink>
                     </li>
                     <li className="link-container">
-                        <NavLink className="contact-link link" to="/contact">Contact</NavLink>
+                        <NavLink className="contact-link header-link neon-purple" to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>

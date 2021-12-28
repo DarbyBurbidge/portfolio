@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-
+import "../Styles/Projects.css"
 
 class Project {
     name: string;
@@ -15,20 +14,33 @@ class Project {
 };
 
 export const Projects: React.FC = () => {
-    const projects: [Project] = [new Project("SalegeHT", "salegeht.com")]
+    const projects: any = [
+        {
+            name: "SalegeHT",
+            domain: "salegeht.com",
+            github: "",
+            imageSRC: ""
+        }, {
+            name: "Portfolio",
+            domain: "thedarby.rocks",
+            github: "",
+            imageSRC: ""
+        }
+    ]
     
     return(
         <div className="body-container">
             <div className="projects">
-                <h3 className="projects-header">Projects</h3>
+                <h2 className="projects-header neon-blue always-on">Projects</h2>
+                <h4 className="sub-header neon-blue always-on"> </h4>
                 <div className="card-container">
-                    {projects.map((project) => {
+                    {projects.map((project: any) => {
                         return (
-                            <div className={`${project.name} card`}>
-                                <img src={project.imageSRC} alt={`${project.name} example window`} />
-                                <h4 className="card-name">{project.name}</h4>
-                                {project.github !== '' ? <p>{project.github}</p> : <p>github unavailable</p>}
-                                {project.domain !== '' ? <Link to={project.domain}>{project.domain}</Link> : <p>example unavailable</p>}
+                            <div key={project.name}className={`${project.name} card`}>
+                                <img className="card-image" src={project.imageSRC} alt={`${project.name} example window`} />
+                                <h4 className="card-title neon-blue always-on">{project.name}</h4>
+                                {project.github !== '' ? <div className="link-wrapper blue-wrapper"><p className="neon-blue body-link enabled">{project.github}</p></div> : <p className="body-link disabled">github unavailable</p>}
+                                {project.domain !== '' ? <div className="link-wrapper blue-wrapper"><a className="neon-blue body-link enabled" href={`https://www.${project.domain}`}>{project.domain}</a></div> : <p className="body-link disabled">example unavailable</p>}
                             </div>
                         )
                     })}

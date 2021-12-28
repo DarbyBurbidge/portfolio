@@ -19,6 +19,52 @@ body {
     box-sizing: border-box;
 }
 
+
+.neon-blue {
+    color: var(--secondary-text-color);
+    text-shadow: 
+        0 0 10px hsl(240, 100%, 70%),
+        0 0 14px hsl(240, 100%, 50%);
+        transition: .3s ease-in;
+}
+
+.neon-blue:hover, .neon-blue.always-on {
+    color: white;
+    text-shadow: 0px 0px 2px white,
+    0 0 5px hsl(240, 100%, 80%),
+    0 0 10px hsl(240, 100%, 70%),
+    0 0 14px hsl(240, 100%, 50%),
+    0 0 18px hsl(240, 100%, 40%),
+    0 0 22px hsl(240, 100%, 30%);
+}
+
+.neon-purple {
+    color: var(--primary-text-color);
+    text-shadow: 
+        0 0 10px hsl(275, 100%, 70%),
+        0 0 14px hsl(275, 100%, 50%);
+        transition: .3s ease-in;
+}
+
+.neon-purple:hover, .neon-purple.active, .neon-purple.always-on {
+    color: white;
+    text-shadow: 0px 0px 2px white,
+    0 0 5px hsl(275, 100%, 80%),
+    0 0 10px hsl(275, 100%, 70%),
+    0 0 14px hsl(275, 100%, 50%),
+    0 0 18px hsl(275, 100%, 40%),
+    0 0 22px hsl(275, 100%, 30%);
+}
+
+
+
+
+
+
+/*********
+ANIMATIONS
+**********/
+
 @keyframes  flicker{
     0%{text-shadow: 0px 0px 2px white,
     0 0 5px hsl(275, 100%, 80%),
@@ -56,4 +102,12 @@ body {
         0 0 14px hsl(275, 100%, 50%),
         0 0 18px hsl(275, 100%, 40%),
         0 0 22px hsl(275, 100%, 30%);}
+}
+
+@keyframes click-purple {
+    1%{box-shadow: inset 0rem .25rem .75rem var(--primary-accent-color);}
+    5%{box-shadow: inset 0rem .25rem 2rem var(--primary-text-color);}
+    7%{box-shadow: inset 0rem .20rem 1.75rem var(--primary-text-color);}
+    10%{box-shadow: inset 0rem .15rem 1.5rem var(--primary-text-color);}
+    100%{box-shadow: inset 0rem 0rem 1.5rem var(--primary-accent-color);}
 }
