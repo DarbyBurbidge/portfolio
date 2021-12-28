@@ -1,0 +1,40 @@
+.contact {
+    color: white;
+    text-shadow: 0px 0px 2px white,
+    0 0 5px hsl(275, 100%, 80%),
+    0 0 10px hsl(275, 100%, 70%),
+    0 0 14px hsl(275, 100%, 50%),
+    0 0 18px hsl(275, 100%, 40%),
+    0 0 22px hsl(275, 100%, 30%);
+}
+
+.contact-header {
+    margin-bottom: 2rem;
+    animation: flicker 2.2s linear 0s forwards
+}
+
+#contact-form {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    animation: flicker 2s linear 0s forwards;
+}
+
+.btn {
+    color: var(--secondary-color);
+    background-color: white;
+    box-shadow: 0px 0px 2px white,
+    0 0 5px hsl(275, 100%, 80%),
+    0 0 10px hsl(275, 100%, 70%),
+    0 0 14px hsl(275, 100%, 50%),
+    0 0 18px hsl(275, 100%, 40%),
+    0 0 22px hsl(275, 100%, 30%);
+    animation: flicker 2s linear .5s forwards;
+}

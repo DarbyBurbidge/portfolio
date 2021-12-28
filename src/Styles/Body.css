@@ -1,0 +1,13 @@
+.body-container {
+    margin: 0;
+    padding: 3rem 0;
+    background-color: var(--secondary-color);
+    box-shadow: inset 0rem 0rem 1rem var(--secondary-accent-color);
+    width: 100vw;
+    min-height: 75vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: .2s
+}

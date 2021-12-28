@@ -1,0 +1,93 @@
+
+.header {
+    padding-top: 1.5rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+background-color: var(--primary-color);
+    box-shadow: inset 0rem -.25rem .75rem var(--primary-accent-color);
+    position: sticky;
+}
+
+.header-title-div, .link-container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    border-radius: 1rem;
+}
+
+.link-container {
+    margin: 0 1rem;
+    border-radius: .5rem;
+}
+
+
+
+
+.main-nav {
+    margin: 0 1rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0 auto 2rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.link {
+    all: unset;
+    padding: .5rem .75rem .5rem .75rem;
+    margin: .25rem;
+    position: relative;
+    border-radius: .5rem;
+    text-shadow: 
+    0 0 10px hsl(275, 100%, 70%),
+    0 0 14px hsl(275, 100%, 50%);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    transition: .3s ease-in;
+}
+
+.header-title-div:hover, li:hover, .has-active {
+    color: white;
+    background-color: var(--primary-color);
+    box-shadow: inset 0rem .25rem .75rem var(--primary-accent-color);
+    
+}
+
+
+.header-title.link {
+    margin: 0;
+    display: inline-block;
+    font-size: 3rem;
+    border-radius: 1rem;
+    animation: flicker 2s linear .1s forwards;
+}
+
+.link:hover, .active, .header-title.link {
+        color: white;
+        text-shadow: 0px 0px 2px white,
+            0 0 5px hsl(275, 100%, 80%),
+            0 0 10px hsl(275, 100%, 70%),
+            0 0 14px hsl(275, 100%, 50%),
+            0 0 18px hsl(275, 100%, 40%),
+            0 0 22px hsl(275, 100%, 30%);
+        /* animation: flicker 1s linear 0s forwards; */
+}
+
+.header-title.link {
+    /* animation: flicker 1.5s linear .1s forwards; */
+    text-shadow: 0px 0px 2px white,
+        0 0 5px hsl(275, 100%, 80%),
+        0 0 10px hsl(275, 100%, 70%),
+        0 0 14px hsl(275, 100%, 50%),
+        0 0 18px hsl(275, 100%, 40%),
+        0 0 22px hsl(275, 100%, 30%);
+}
