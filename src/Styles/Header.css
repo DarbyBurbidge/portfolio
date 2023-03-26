@@ -19,7 +19,7 @@
 }
 
 .link-container {
-    margin: 0 1rem;
+    margin: .5rem 1rem;
     border-radius: .5rem;
     box-shadow: inset 0rem .25rem .5rem var(--primary-accent-color);
 }

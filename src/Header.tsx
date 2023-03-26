@@ -38,12 +38,6 @@ export const Header: React.FC = () => {
                         <NavLink className="home-link header-link neon-purple" to="/">Home</NavLink>
                     </li>
                     <li className="link-container">
-                        <NavLink className="projects-link header-link neon-purple" to="/projects">Projects</NavLink>
-                    </li>
-                    <li className="link-container">
-                        <NavLink className="about-link header-link neon-purple" to="/about">About</NavLink>
-                    </li>
-                    <li className="link-container">
                         <NavLink className="contact-link header-link neon-purple" to="/contact">Contact</NavLink>
                     </li>
                 </ul>
