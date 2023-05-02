@@ -16,7 +16,7 @@ export const Projects: React.FC = () => {
     const projects: Project[] = [
         {
             name: "Easy Pantry",
-            example: "easypantry.app",
+            example: "https://www.easypantry.app",
             github: "Pantry-frontend",
             imageSRC: "easypantry-thumbnail.png",
             description: "A simple app to help keep track of your pantry."
@@ -26,15 +26,15 @@ export const Projects: React.FC = () => {
             npm: "react-meter",
             github: "react-meter",
             imageSRC: "react-meter_thumbnail.png",
-            description: "A React component module for a semi-circular meter, built to be customizeable."
+            description: "A customizeable React component module for a semi-circular meter."
         }, {
             name: "LMDB-Express-Explorer-API",
             github: "LMDB-Express",
-            description: "A minimal API to test the node-lmdb module and it's applications in a blockchain explorer"
+            description: "A minimal API to test the node-lmdb module and it's applications."
         }, {
             name: "IPFS-Algorand Smart Contract",
             github: "ipfs_algorand_sc",
-            description: "A smart contract written to explore the Algorand blockchain and distributed filesystems"
+            description: "A smart contract build to send IPFS style file keys over the blockchain"
         }
     ]
     
@@ -85,9 +85,11 @@ export const Projects: React.FC = () => {
                             </div>
                         )
                         }
+                        return(<></>)
                     })
                 }
                 </div>
+                <div className="link-wrapper blue-wrapper big" onClick={() => {setSeeMore(!seeMore)}}><p className="neon-blue body-link enabled centered">{seeMore ? "Less" : "More"}</p></div>
             </div>
         </div>
     );

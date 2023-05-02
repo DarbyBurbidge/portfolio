@@ -14,7 +14,9 @@
     text-decoration: none;
 }
 
-
+.card-container {
+    max-width: 35rem;
+}
 
 .card {
     margin: 2rem 0rem;
@@ -48,4 +50,13 @@
 .link-wrapper:hover {
     background-color: var(--secondary-color);
     box-shadow: inset 0rem .25rem .75rem var(--secondary-accent-color);
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big {
+    font-size: 1.5rem;
 }

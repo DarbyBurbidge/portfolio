@@ -1,4 +1,4 @@
-import { createRef, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../Styles/Contact.css";
@@ -36,7 +36,7 @@ export const Contact: React.FC = () => {
                 sendEmail(captchaToken)
                     .then((res) => {
                         console.log(res)
-                        res.status == 200 ? setSent(true) : setSent(false)
+                        res.status === 200 ? setSent(true) : setSent(false)
                     }, (err) => {
                         console.error(err)
                     })
